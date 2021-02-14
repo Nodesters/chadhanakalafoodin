@@ -406,19 +406,19 @@ ul.dropdown-menu a {
 }
 
 .slider-img1 {
-  background: url(../images/ban7.jpg) no-repeat 0px 0px;
+  background: url(../images/ban7.jpg) no-repeat center center;
 }
 
 .slider-img2 {
-  background: url(../images/ban4.jpg) no-repeat 0px 0px;
+  background: url(../images/ban4.jpg) no-repeat center center;
 }
 
 .slider-img3 {
-  background: url(../images/ban6.jpg) no-repeat 0px 0px;
+  background: url(../images/ban6.jpg) no-repeat center center;
 }
 
 .slider-img4 {
-  background: url(../images/ban2.jpg) no-repeat 0px 0px;
+  background: url(../images/ban2.jpg) no-repeat center center;
 }
 
 .slider-img1,
@@ -1606,6 +1606,11 @@ select.dropdown {
   }
   .price-grid {
     padding: 0 4em;
+  }
+
+  .tagline {
+      background-color: #e7272d;
+      padding: 0.5rem !important;
   }
 }
 @media (max-width: 414px) {
