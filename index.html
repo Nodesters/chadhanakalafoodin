@@ -32,6 +32,7 @@
 	<link href="css/simpleLightbox.css" rel='stylesheet' type='text/css' />
 	<!--stylesheets-->
 	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" property="" />
+	<link href="/css/iziToast.css" rel='stylesheet'>
 	<link href="css/style.css" rel='stylesheet' type='text/css' media="all">
 	<!--//stylesheets-->
 	<link
@@ -161,6 +162,75 @@
 	<!--//Slider-->
 	<!-- //banner -->
 
+	<!-- Contact-form -->
+	<div class="contact py-5" id="contact">
+		<div class="container  py-md-3">
+			<div class="w3-head-all mb-3 w3-head-col">
+				<h3>Contact us</h3>
+			</div>
+			<div class="address-below">
+				<div class="contact-icons text-center row">
+					<div class="col-md-4 col-sm-4 col-xs-4 footer_grid_left">
+						<div class="icon_grid_left">
+							<span class="fas fa-map-marker" aria-hidden="true"></span>
+						</div>
+						<div class="address-gried">
+							<p>Chandhanakala Building, Kiliyanickal Junction,<span>Kozhencherry, Melukara-Ranni Rd,
+									Kattoor, Kerala 689650</span></p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-4 footer_grid_left">
+						<div class="icon_grid_left">
+							<span class="fas fa-phone" aria-hidden="true"></span>
+						</div>
+						<div class="address-gried">
+							<p>+919961721242</p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-4 footer_grid_left">
+						<div class="icon_grid_left">
+							<span class="fas fa-envelope-open" aria-hidden="true"></span>
+						</div>
+						<div class="address-gried">
+							<p><a href="mailto:ckfoodinn@outlook.com">ckfoodinn@outlook.com</a>
+							</p>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<div class="w3layouts_mail_grid_right">
+				<form onsubmit="handleContactFormSubmission(event)" id="contactForm">
+					<div class="row contact-grids">
+						<div class="col-md-6 col-xs-6 wthree_contact_left_grid">
+							<input type="text" name="Name" placeholder="Name" required="">
+						</div>
+						<div class="col-md-6 col-xs-6 wthree_contact_left_grid">
+							<input type="email" name="Email" placeholder="Email" required="">
+						</div>
+						<div class="col-md-6 col-xs-6 wthree_contact_left_grid">
+							<input type="text" name="Mobile" placeholder="Mobile" required="">
+						</div>
+						<div class="col-md-6 col-xs-6 wthree_contact_left_grid">
+							<input type="text" name="Subject" placeholder="Subject" required="">
+						</div>
+						<div class="clearfix"> </div>
+						<textarea name="Message" placeholder="Message..." required=""></textarea>
+						<input type="submit" value="Submit">
+						<input type="reset" value="Clear">
+						<div>
+							<div class="loading">Loading</div>
+							<div class="error-message text-center"></div>
+							<div class="sent-message">Your message has been sent. Thank you!</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
 	<!--map-->
 	<div class="map">
 		<iframe
@@ -194,6 +264,8 @@
 	<!-- //footer section -->
 	<script src='js/jquery-2.2.3.min.js'></script>
 	<!-- //js  working-->
+	
+	<script src='/js/iziToast.js'></script>
 
 	<!-- Banner Responsive slider -->
 	<script src="js/responsiveslides.min.js"></script>
@@ -310,6 +382,7 @@
 	<!--bootstrap working-->
 	<script src="js/bootstrap.js"></script>
 	<!-- //bootstrap working-->
+	<script src="/js/script.js"></script>
 </body>
 
 </html>
