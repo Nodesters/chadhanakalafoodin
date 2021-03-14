@@ -86,11 +86,19 @@ ul {
 /*-- //Reset-Code --*/
 /*-- navigation --*/
 .top-nav {
-  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 0;
   z-index: 9;
   width: 100%;
-  padding: 1em 0;
+  transition-timing-function: ease-in;
+  transition: all 1s;
 }
+
+.nav-black {
+  background-color: #000000;
+}
+
 .navbar-light .navbar-nav .show > .nav-link,
 .navbar-light .navbar-nav .active > .nav-link,
 .navbar-light .navbar-nav .nav-link.show,
@@ -1460,7 +1468,11 @@ select.dropdown {
     min-height: 550px;
   }
   .navbar-toggler {
-    background-color: #fff;
+    background-color: transparent;
+  }
+  .navbar-toggler:focus {
+    border: none;
+    outline: none;
   }
   .welcome_left {
     margin-top: 2em;

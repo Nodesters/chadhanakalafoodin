@@ -1,3 +1,11 @@
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 250) {
+        document.getElementById('top-nav').classList.add('nav-black');
+    } else {
+        document.getElementById('top-nav').classList.remove('nav-black');
+    }
+});
+
 const handleContactFormSubmission = (e) => {
     e.preventDefault();
 
@@ -59,7 +67,7 @@ const handleContactFormSubmission = (e) => {
             console.log(response);
         },
         error: (error) => {
-            if(error) {
+            if (error) {
                 const toast = document.querySelector('.iziToast');
 
                 iziToast.hide({
