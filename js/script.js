@@ -1,11 +1,3 @@
-window.addEventListener("scroll", () => {
-    if (window.scrollY > 100) {
-        document.getElementById('top-nav').classList.add('nav-black');
-    } else {
-        document.getElementById('top-nav').classList.remove('nav-black');
-    }
-});
-
 const handleContactFormSubmission = (e) => {
     e.preventDefault();
 

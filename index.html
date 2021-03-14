@@ -21,8 +21,17 @@
 		function hideURLbar() {
 			window.scrollTo(0, 1);
 		}
+
+		window.addEventListener("scroll", () => {
+			if (window.scrollY > 100) {
+				document.getElementById('top-nav').classList.add('nav-black');
+			} else {
+				document.getElementById('top-nav').classList.remove('nav-black');
+			}
+		});
 	</script>
 	<!--//meta tags ends here-->
+	<link rel="icon" href="favicon.ico" />
 	<!--booststrap-->
 	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
 	<!--//booststrap end-->
